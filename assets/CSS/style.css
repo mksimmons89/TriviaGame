@@ -5,16 +5,14 @@ body{
   background: url('../images/america.jpg');
 }
 
-#main-container{
-  background: lightgrey;
+#main-container, footer{
+  background-color: lightgrey;
   padding: 30px;
   margin: 60px;
-  opacity; .5;
 }
 
 h1{
-  background-color: grey;
-  background-opacity: .5;
+  background-color: lightgrey;
   padding: 30px;
   margin: 60px;
 }
