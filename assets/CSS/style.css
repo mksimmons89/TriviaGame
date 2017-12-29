@@ -1,0 +1,20 @@
+body{
+  font-size: 18px;
+  font family: font-family: 'Permanent Marker', cursive;
+  color: blue;
+  background: url('../images/america.jpg');
+}
+
+#main-container{
+  background: lightgrey;
+  padding: 30px;
+  margin: 60px;
+  opacity; .5;
+}
+
+h1{
+  background-color: grey;
+  background-opacity: .5;
+  padding: 30px;
+  margin: 60px;
+}
