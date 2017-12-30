@@ -1,3 +1,7 @@
+
+// var countdownElement = getElementById("countdown");
+
+
 function submitAnswers(){
   var total = 8;
   var score = 0;
@@ -46,6 +50,10 @@ function submitAnswers(){
 
   }
 
-  alert("you scored " +score+ "out of " + total);
+// display results
+var results = document.getElementById("results");
+results.innerHTML = "<p>you scored <span>" +score+ "</span> out of <span>" +total+"</span></p>";
+alert("you scored " +score+ " out of " +total);
+return false;
 
 }
