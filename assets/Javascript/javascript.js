@@ -31,4 +31,21 @@ function submitAnswers(){
 
     }
 
+    // Establish correct answers in arrray
+    var answers = ["a","c","b","a","c","a","c","b"];
+
+    // check awnsers
+    // if(q1 == answers[0]){
+    //   scores++;
+    // }
+// once again, we shouldn't write 8 if statements, so we will be doing a for loop. So from directly above, we are going to do a for loop so it can run thru and check all the correct answers.
+    for(i = 1; i <= total; i++){
+    if(eval("q" + i) == answers[i - 1]){
+    score++;
+    }
+
+  }
+
+  alert("you scored " +score+ "out of " + total);
+
 }
