@@ -1,10 +1,7 @@
-
-// var countdownElement = getElementById("countdown");
-
+var total = 8;
+var score = 0;
 
 function submitAnswers(){
-  var total = 8;
-  var score = 0;
 
 //obtaining user input
   var q1 = document.forms["quizform"]["q1"].value;
@@ -55,5 +52,32 @@ var results = document.getElementById("results");
 results.innerHTML = "<p>you scored <span>" +score+ "</span> out of <span>" +total+"</span></p>";
 alert("you scored " +score+ " out of " +total);
 return false;
+// var windowTimeout = setTimeout(function(){
+//   results.innerHTML = "<p>you scored <span>" +score+ "</span> out of <span>" +total+"</span></p>";
+//   return false;
+//   }
+//
+// setTimeout(timeoutResults, 30*1000);
+
 
 }
+var results = document.getElementById("results");
+
+var number = 30;
+var intervalId;
+$("#countdown").on("click", run);
+function run() {
+  intervalId = setInterval(decrement, 1000);
+}
+function decrement() {
+  number--;
+  $("#countdown").html("<h2>" + number + "</h2>");
+  if (number === 0) {
+
+    results.innerHTML = "<p>you scored <span>" +score+ "</span> out of <span>" +total+"</span></p>";
+    alert("you scored " +score+ " out of " +total);
+    clearInterval(intervalId);
+    //return false;
+  }
+}
+run();
