@@ -32,3 +32,10 @@ h1{
   text-align: center;
   background-color: white;
 }
+
+#countdown{
+  font-size: 30px;
+  font-family: 'Glegoo', serif;
+background-color: yellow;
+  text-align: center;
+}
